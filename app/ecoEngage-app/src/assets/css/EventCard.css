@@ -1,0 +1,6 @@
+.cardContainer {
+  border: 3px solid #00a886; /* Add border */
+  border-radius: 12px; /* Add border radius */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow */
+}

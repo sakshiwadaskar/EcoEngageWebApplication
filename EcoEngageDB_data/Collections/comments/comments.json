@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "662576dbb1a5c39e66544a43"
+  },
+  "postId": {
+    "$oid": "662576c3b1a5c39e66544a3e"
+  },
+  "author": "Test User",
+  "authorId": "661cbbbe260caf050bcb2188",
+  "commentContent": "This is a comment",
+  "timeStamp": {
+    "$date": "2024-04-21T20:28:11.989Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6625773cb1a5c39e66544a6b"
+  },
+  "postId": {
+    "$oid": "662576c3b1a5c39e66544a3e"
+  },
+  "author": "Test user",
+  "authorId": "662028ab6fea7ccb0c1129db",
+  "commentContent": "My comment",
+  "timeStamp": {
+    "$date": "2024-04-21T20:29:48.171Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626c44a015bb98faf33040e"
+  },
+  "postId": {
+    "$oid": "6626c442015bb98faf33040a"
+  },
+  "author": "First Last",
+  "authorId": "6626c312015bb98faf3303bc",
+  "commentContent": "My comment",
+  "timeStamp": {
+    "$date": "2024-04-22T20:10:50.646Z"
+  },
+  "__v": 0
+}]

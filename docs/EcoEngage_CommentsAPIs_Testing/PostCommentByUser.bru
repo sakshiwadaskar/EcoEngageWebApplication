@@ -1,0 +1,28 @@
+meta {
+  name: PostCommentByUser
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:5001/comments/post/6622ecc5e7582a81801af75c
+  body: json
+  auth: bearer
+}
+
+headers {
+  ~Bearer: .eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzU2Nzc4MywiZXhwIjoxNzEzNjU0MTgzfQ.ksnFVHDk_6pR2aHxInZ4Qy_CJTgb12YyVMzclm5N3Ek
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFteUBnbWFpbC5jb20iLCJ1c2VySWQiOiI2NjI2ODMzODU4YTc1YzEwOTlmYTU1MjkiLCJmaXJzdE5hbWUiOiJBbXkgIiwibGFzdE5hbWUiOiJSaG9kZXMiLCJpYXQiOjE3MTM3OTk5OTIsImV4cCI6MTcxNDY2Mzk5Mn0.GKTwSlQKGJxjmmpbKSraRHsppzC-xZBGnECQ8CkXsVY
+}
+
+body:json {
+      {
+      "postId": "6622ecc5e7582a81801af75d",
+      "authorId": "62175b23f3f4965a9b6a8b7b",
+      "commentContent": "Sure, let's meet up, lovely seeing you all networking!"
+  }
+    
+}

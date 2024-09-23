@@ -1,0 +1,26 @@
+meta {
+  name: updateEventById
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:4000/events/661c5ac63d03ef84008890dc
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Community Cleanup Day",
+    "title": "Beach Cleanup Event",
+    "description": "Join us for a day of cleaning up the local beach and promoting environmental sustainability.",
+    "eventStartDate": "2024-04-01T08:00:00.000Z",
+    "eventEndDate": "2024-04-03T12:00:00.000Z",
+    "usersRegistered": [
+      "61793b9a7ebf0cf60cfbfa59",
+      "661c5b6d3d03ef84008890de",
+      "661c5b8f3d03ef84008890df"
+    ]
+  }
+}

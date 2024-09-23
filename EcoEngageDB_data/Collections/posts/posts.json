@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "66209bf96e7986ff1e7b9f2a"
+  },
+  "title": "Testing new post",
+  "content": "I just want to make the world a better place",
+  "author": "Akshit Saxena",
+  "comments": [],
+  "creationDate": {
+    "$date": "2024-04-18T04:05:13.477Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66209c106e7986ff1e7b9f2c"
+  },
+  "title": "Testing new post 2",
+  "content": "New post content 2",
+  "author": "Akshit Saxena",
+  "comments": [],
+  "creationDate": {
+    "$date": "2024-04-18T04:05:36.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662576c3b1a5c39e66544a3e"
+  },
+  "title": "Testing newest post",
+  "content": "Testing newest comment",
+  "author": "Test",
+  "authorId": {
+    "$oid": "661cbbbe260caf050bcb2188"
+  },
+  "creationDate": {
+    "$date": "2024-04-21T20:27:47.092Z"
+  },
+  "comments": [
+    {
+      "postId": {
+        "$oid": "662576c3b1a5c39e66544a3e"
+      },
+      "author": "Test User",
+      "authorId": "661cbbbe260caf050bcb2188",
+      "timeStamp": {
+        "$date": "2024-04-21T20:28:11.989Z"
+      },
+      "commentContent": "This is a comment",
+      "_id": {
+        "$oid": "662576dbb1a5c39e66544a43"
+      },
+      "__v": 0
+    },
+    {
+      "postId": {
+        "$oid": "662576c3b1a5c39e66544a3e"
+      },
+      "author": "Test user",
+      "authorId": "662028ab6fea7ccb0c1129db",
+      "timeStamp": {
+        "$date": "2024-04-21T20:29:48.171Z"
+      },
+      "commentContent": "My comment",
+      "_id": {
+        "$oid": "6625773cb1a5c39e66544a6b"
+      },
+      "__v": 0
+    }
+  ],
+  "__v": 1,
+  "likes": [
+    {
+      "$oid": "662028ab6fea7ccb0c1129db"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6626c442015bb98faf33040a"
+  },
+  "title": "Lorem Ipsum",
+  "content": "Post contentefef",
+  "author": "First",
+  "authorId": {
+    "$oid": "6626c312015bb98faf3303bc"
+  },
+  "likes": [],
+  "creationDate": {
+    "$date": "2024-04-22T20:10:42.676Z"
+  },
+  "comments": [
+    {
+      "postId": {
+        "$oid": "6626c442015bb98faf33040a"
+      },
+      "author": "First Last",
+      "authorId": "6626c312015bb98faf3303bc",
+      "timeStamp": {
+        "$date": "2024-04-22T20:10:50.646Z"
+      },
+      "commentContent": "My comment",
+      "_id": {
+        "$oid": "6626c44a015bb98faf33040e"
+      },
+      "__v": 0
+    }
+  ],
+  "__v": 0
+}]

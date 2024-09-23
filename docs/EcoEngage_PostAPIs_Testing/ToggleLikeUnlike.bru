@@ -1,0 +1,19 @@
+meta {
+  name: ToggleLikeUnlike
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:5001/posts/662589c33a5d8d9ffc3b7113/toggle-like
+  body: json
+  auth: bearer
+}
+
+headers {
+  Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzc0MTY5MSwiZXhwIjoxNzEzODI4MDkxfQ.-2UMNOqICO2j33zePf2cwiljGH_OyZAVehNh0hHim4Q
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzc0MTY5MSwiZXhwIjoxNzEzODI4MDkxfQ.-2UMNOqICO2j33zePf2cwiljGH_OyZAVehNh0hHim4Q
+}

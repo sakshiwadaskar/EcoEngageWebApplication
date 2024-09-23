@@ -1,0 +1,164 @@
+openapi: 3.0.0
+info:
+  title: EcoEngage Portal API
+  version: 1.0.0
+  description: APIs for managing users, posts, comments, rewards, events, tree plantations, AQI data, carbon footprint calculations, and authentication in the EcoEngage Portal.
+
+servers:
+  - url: https://example.com/api/v1
+    description: Production server
+
+paths:
+  /register:
+    post:
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserRegistration"
+      responses:
+        "200":
+          description: User successfully registered
+        "400":
+          description: Bad request
+
+  /login:
+    post:
+      summary: User login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserLogin"
+      responses:
+        "200":
+          description: User logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    description: JWT token for authentication
+        "401":
+          description: Unauthorized
+
+  /users:
+    get:
+      summary: Retrieve all users
+      responses:
+        "200":
+          description: A list of users
+
+  /users/{userId}:
+    get:
+      summary: Retrieve a specific user by ID
+      parameters:
+        - name: userId
+          in: path
+          description: ID of the user to retrieve
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "200":
+          description: User found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "404":
+          description: User not found
+    put:
+      summary: Update an existing user
+      parameters:
+        - name: userId
+          in: path
+          description: ID of the user to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "200":
+          description: Updated
+        "400":
+          description: Bad request
+        "404":
+          description: User not found
+    delete:
+      summary: Delete a user by ID
+      parameters:
+        - name: userId
+          in: path
+          description: ID of the user to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "204":
+          description: No content
+        "404":
+          description: User not found
+
+components:
+  schemas:
+    UserRegistration:
+      type: object
+      properties:
+        name:
+          type: string
+          example: John Doe
+        email:
+          type: string
+          example: johndoe@example.com
+        password:
+          type: string
+          example: mysecretpassword
+        address1:
+          type: string
+          example: 123 Green Street
+        city:
+          type: string
+          example: EcoCity
+        state:
+          type: string
+          example: EcoState
+        zipCode:
+          type: string
+          example: 12345
+
+    UserLogin:
+      type: object
+      properties:
+        email:
+          type: string
+          example: johndoe@example.com
+        password:
+          type: string
+          example: mysecretpassword
+
+    User:
+      type: object
+      properties:
+        userId:
+          type: integer
+          example: 123
+        points:
+          type: integer
+          example: 500
+        walletAmt:
+          type: integer
+          example: 100

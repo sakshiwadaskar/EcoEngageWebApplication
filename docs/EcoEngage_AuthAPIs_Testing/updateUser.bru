@@ -1,0 +1,23 @@
+meta {
+  name: UpdateUser
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:5001/auth/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ldy51c2VyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjY2MWQ5M2I5YTAyNTBiOWEwMWExMTBiMiIsImZpcnN0TmFtZSI6Ik5ldyIsImxhc3ROYW1lIjoiVXNlciIsImlhdCI6MTcxMzIxNDM5MywiZXhwIjoxNzEzMzAwNzkzfQ.2mZPgr7QU8A9FAEGa8oppNGqIBAbSsd1FaL8lJiq-zw
+}
+
+body:json {
+  {
+    "firstName": "UpdatedFirstName",
+    "lastName": "UpdatedLastName",
+    "bio": "Updated Bio"
+  }
+}

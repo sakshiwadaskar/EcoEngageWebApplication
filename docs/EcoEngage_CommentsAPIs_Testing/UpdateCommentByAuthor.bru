@@ -1,0 +1,24 @@
+meta {
+  name: UpdateCommentByAuthor
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:5001/comments/6624af8d4f8c02d9df1b338c
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFteUBnbWFpbC5jb20iLCJ1c2VySWQiOiI2NjI2ODMzODU4YTc1YzEwOTlmYTU1MjkiLCJmaXJzdE5hbWUiOiJBbXkgIiwibGFzdE5hbWUiOiJSaG9kZXMiLCJpYXQiOjE3MTM3OTk5OTIsImV4cCI6MTcxNDY2Mzk5Mn0.GKTwSlQKGJxjmmpbKSraRHsppzC-xZBGnECQ8CkXsVY
+}
+
+body:json {
+     {
+      "postId": "6622ef224c8a0125c92fbdf0",
+      "authorId": "6620776e88d3ddda1549da05",
+      "timeStamp": "2022-05-16T14:00:45.000Z",
+      "commentContent": "Yes almost done gardening is definitely something more cities should embrace. Great read!"
+    }
+}

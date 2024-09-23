@@ -1,0 +1,224 @@
+openapi: 3.0.0
+info:
+  title: EcoEngage Portal API
+  version: 1.0.0
+  description: APIs for managing users, events, AQI data and carbon footprint calculations in the EcoEngage Portal.
+
+servers:
+  - url: https://example.com/api/v1
+    description: Production server
+
+paths:
+  /events:
+    get:
+      summary: Get all events
+      responses:
+        "200":
+          description: List of events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Event"
+        "401":
+          description: Unauthorized
+
+    post:
+      summary: Create a new event
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewEvent"
+      responses:
+        "201":
+          description: Event created successfully
+        "401":
+          description: Unauthorized
+        "400":
+          description: Bad request
+
+  /aqi:
+    get:
+      summary: Get real-time AQI data
+      parameters:
+        - name: location
+          in: query
+          required: true
+          description: Location for AQI data
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Real-time AQI data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AQIData"
+        "401":
+          description: Unauthorized
+        "404":
+          description: Location not found
+
+  /carbon-footprint:
+    post:
+      summary: Calculate carbon footprint
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CarbonFootprintInputs"
+      responses:
+        "200":
+          description: Carbon footprint calculated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CarbonFootprintReport"
+        "401":
+          description: Unauthorized
+        "400":
+          description: Bad request
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        userId:
+          type: integer
+          example: 123
+        points:
+          type: integer
+          example: 100
+        walletAmt:
+          type: integer
+          example: 500
+
+    Event:
+      type: object
+      properties:
+        eventId:
+          type: integer
+          example: 456
+        title:
+          type: string
+          example: "Community Cleanup Event"
+        description:
+          type: string
+          example: "Join us for a community cleanup event."
+        location:
+          type: string
+          example: "Central Park"
+        startDate:
+          type: string
+          format: date
+          example: "2024-04-15"
+        endDate:
+          type: string
+          format: date
+          example: "2024-04-15"
+        participants:
+          type: array
+          items:
+            $ref: "#/components/schemas/User"
+          example:
+            - userId: 123
+              points: 100
+              walletAmt: 500
+            - userId: 456
+              points: 50
+              walletAmt: 200
+        organizer:
+          $ref: "#/components/schemas/Business"
+          example:
+            businessId: 789
+            name: "EcoEngage Organization"
+            location: "New York"
+
+    NewEvent:
+      type: object
+      properties:
+        title:
+          type: string
+          example: "Tree Plantation Drive"
+        description:
+          type: string
+          example: "Join us for a tree plantation drive in the local park."
+        location:
+          type: string
+          example: "City Park"
+        startDate:
+          type: string
+          format: date
+          example: "2024-05-01"
+        endDate:
+          type: string
+          format: date
+          example: "2024-05-01"
+
+    Business:
+      type: object
+      properties:
+        businessId:
+          type: integer
+          example: 789
+        name:
+          type: string
+          example: "EcoEngage Organization"
+        location:
+          type: string
+          example: "New York"
+
+    AQIData:
+      type: object
+      properties:
+        location:
+          type: string
+          example: "City Center"
+        timestamp:
+          type: string
+          format: date-time
+          example: "2024-04-15T12:00:00Z"
+        aqiValue:
+          type: integer
+          example: 45
+
+    CarbonFootprintInputs:
+      type: object
+      properties:
+        transportationType:
+          type: string
+          example: "Car"
+        distanceTraveled:
+          type: number
+          example: 50
+        energyUsage:
+          type: number
+          example: 200
+        wasteGenerated:
+          type: number
+          example: 10
+
+    CarbonFootprintReport:
+      type: object
+      properties:
+        user:
+          $ref: "#/components/schemas/User"
+          example:
+            userId: 123
+            points: 100
+            walletAmt: 500
+        carbonFootprintValue:
+          type: number
+          example: 25.8
+        recommendations:
+          type: array
+          items:
+            type: string
+          example:
+            - "Use public transportation."
+            - "Reduce energy consumption at home."

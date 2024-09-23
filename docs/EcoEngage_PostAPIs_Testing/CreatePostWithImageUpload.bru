@@ -1,0 +1,29 @@
+meta {
+  name: CreatePostWithImageUpload
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5001/posts/
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: multipart/form-data
+  ~Bearer: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzU2MDQzMywiZXhwIjoxNzEzNjQ2ODMzfQ.LQd49PKL4cAdCenWwP8ckmrynwSAKnQtCESDUDH7TQg
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzgzMDk2NywiZXhwIjoxNzEzOTE3MzY3fQ.zMdBcnjPm0XKkENinzFTiAFniOMLiZchpe3ghUO-rio
+}
+
+body:json {
+  {
+    "title": "FRIDAY 19th Post 3 API Create Test",
+    "content": "This is the content of the sample post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "author": "Sakshi Wadaskar",
+    "image": "http://localhost:5001/uploads/16e6e97b-eb39-4697-8abc-74930132fda7.jpg"
+  }
+}

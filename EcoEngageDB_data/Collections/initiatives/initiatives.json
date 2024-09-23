@@ -1,0 +1,74 @@
+[
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19373"
+    },
+    "name": "Clean Air Task Force",
+    "description": "The Clean Air Task Force is a US-based non-governmental organization that has been working to reduce air pollution since its founding in 1996. It led a successful campaign to reduce the pollution caused by coal-fired power plants in the US, helped limit the US power sector’s CO2 emissions, and helped establish regulations of diesel, shipping, and methane emissions. CATF also advocates for the adoption of neglected low- and zero-carbon technologies, from advanced nuclear power to super-hot rock geothermal energy.",
+    "donate": "In addition to its seriously impressive record of success and the high quality of its research, CATF does well on the neglectedness criterion: It often concentrates on targeting emissions sources that are neglected by other environmental organizations, and on scaling up deployment of technologies that are crucial for decarbonization, yet passed over by NGOs and governments. For example, it was one of the first major environmental groups to publicly campaign against overlooked superpollutants like methane.",
+    "link": "https://www.catf.us/donate/"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19374"
+    },
+    "name": "Carbon180",
+    "description": "This environmental nonprofit has a simple but radical goal: accelerating the development of carbon removal technologies that would take carbon dioxide out of the atmosphere and lock it away for hundreds of years or more. It works toward that goal of carbon removal (or “negative emissions”) through policy advocacy on Capitol Hill. The approach has reaped dividends with the passage of legislation — like the Inflation Reduction Act and the Infrastructure Investment and Jobs Act — that included billions in research and development for carbon removal.",
+    "donate": "Scientists agree that we’ll need some deployment of carbon-removal technologies to keep the planet habitable. Carbon removal generally has been underfunded, in part because the tech is pretty new, though it’s been catching up fast. Carbon180 can play an important role by investing in entrepreneurs, by boosting public awareness of carbon removal as necessary tech, and especially by advocating for more federal and state support. Since a lot of the momentum for carbon removal has come from the tech community, there’s been a focus on offsets and private investment, leaving government advocacy somewhat underprovided. So it makes sense for impact-minded donors to focus on a policy advocacy group like Carbon180.",
+    "link": "https://carbon180.org/donate/"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19375"
+    },
+    "name": "TerraPraxis",
+    "description": "TerraPraxis is a UK-based nonprofit aiming to find innovative ways to meet the globe’s growing energy needs, with a special focus on advanced nuclear power, which is neglected in the climate funding landscape. The data shows that nuclear power is safer than you might think. It’s a clean energy source that’s already been scaled up fast to decarbonize electricity systems in countries like Sweden and France; going forward, it could help ensure that people in developing countries have enough energy to meet their needs.",
+    "donate": "TerraPraxis is a relatively young organization, but in just three years, it has helped catalyze a solution to the tricky conundrum of how to deal with the many coal plants that were built recently and probably won’t be shut down anytime soon: Why not repower them with emissions-free heat sources? TerraPraxis is now leading a global REPOWER Consortium of governments, industry, and nonprofits that are dedicated to that solution.",
+    "link": "https://www.every.org/terrapraxis?viewport=desktop"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19376"
+    },
+    "name": "Good Energy Collective",
+    "description": "Good Energy Collective does outreach to US communities and politicians to help build broad support for advanced nuclear power, which, remember, is neglected in the climate funding landscape.",
+    "donate": "It’s fantastic that wind and solar power have gotten cheap, but they can’t do the job alone. We need other clean energy sources. That’s why Giving Green recommends the Good Energy Collective, noting, “A new era of low-carbon ‘advanced’ nuclear reactors promises a safer, cheaper, and more scalable complement to renewable energy than traditional nuclear power.”",
+    "link": "https://www.givingwhatwecan.org/charities/good-energy-collective"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19377"
+    },
+    "name": "Future Cleantech Architects",
+    "description": "This Germany-based organization is also pretty young. Its aim is to promote innovation in Europe’s hard-to-decarbonize sectors by running key programs in, for example, zero-carbon fuels, industry, and carbon removal technologies.",
+    "donate": "You might be wondering if this kind of innovation really meets the “neglectedness” criterion — don’t we already have a lot of innovation? In the US, yes. But in Europe, this kind of organization is much rarer. And according to Founders Pledge, it’s already exceeded expectations at improving the European climate policy response. Most notably, it has helped shape key legislation at the EU level and advised policymakers on how to get the most bang for their buck when supporting research and development for clean energy tech.",
+    "link": "https://fcarchitects.org/contact-us/"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19378"
+    },
+    "name": "Good Food Institute",
+    "description": "The Good Food Institute works to make alternative proteins (think plant-based burgers) competitive with conventional proteins like beef, which could help reduce livestock consumption. It engages in scientific research, industry partnerships, and government advocacy that improves the odds of alternative proteins going mainstream.",
+    "donate": "Raising animals for meat is responsible for at least 10 percent of global emissions. These animals belch the superpollutant methane. Plus, we humans tend to deforest a lot of land for them to graze on, even though we all know the world needs more trees, not less. Yet there hasn’t been very much government effort to substantially cut agricultural emissions. Giving Green recommends the Good Food Institute because of its potential to help with that.",
+    "link": "https://gfi.org/donate/"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b19379"
+    },
+    "name": "Industrious Labs",
+    "description": "This is a newish organization with one clear goal: helping global “heavy industry” — think steel and cement — go green. Through advocacy, Industrious Labs pushes corporations to make low-carbon commitments, and pushes governments to make sure that regulations and public funding are in place to accelerate the transition.",
+    "donate": "Steel and cement are “can’t live with ’em, can’t live without ’em” kind of industries. We need them to build, yet they account for one-third of greenhouse gas emissions. And these industries are bizarrely neglected by both government and philanthropy. Helping them go green could make a big difference, which is why Giving Green recommends Industrious Labs.",
+    "link": "https://www.givingwhatwecan.org/charities/industrious-labs"
+  },
+  {
+    "_id": {
+      "$oid": "662584eaf2aa273d58b1937a"
+    },
+    "name": "DEPLOY/US",
+    "description": "This nonpartisan nonprofit works with American conservatives — yes, you read that right — to enact decarbonization policies, with the goal of reaching net-zero emissions by 2050. DEPLOY/US partners with philanthropic, business, military, faith, youth, policy, and grassroots organizations to shape a decarbonization strategy and generate policy change.",
+    "donate": "In case you haven’t heard of the eco-right, it’s important to know that there are genuine right-of-center climate groups that want to build support for decarbonization based on conservative principles. These groups have a crucial role to play; they can weaken political polarization around climate and increase Republican support for bold decarbonization policies, which would be especially important if Republicans take the presidency in 2024. But right now, these groups are incredibly underfunded. Founders Pledge recommends donating to DEPLOY/US because it’s uniquely positioned to insulate climate policy against the shifting winds of politics.",
+    "link": "https://www.deployus.org/support-our-work"
+  }
+]

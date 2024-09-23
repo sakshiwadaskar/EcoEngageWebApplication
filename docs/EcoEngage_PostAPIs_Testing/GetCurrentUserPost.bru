@@ -1,0 +1,15 @@
+meta {
+  name: GetCurrentUserPost
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:3001/posts/user
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzU2MDQzMywiZXhwIjoxNzEzNjQ2ODMzfQ.LQd49PKL4cAdCenWwP8ckmrynwSAKnQtCESDUDH7TQg
+}

@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "661cb48fc3cd494202dd098f"
+  },
+  "userId": {
+    "$oid": "661cb48fc3cd494202dd098e"
+  },
+  "firstName": "Akshit",
+  "lastName": "Saxena",
+  "email": "sawxena.akshit@gmail.com",
+  "password": "$2b$10$gqAyZRiokZsAAMbKXYmF2OgCathw6jDEJtUD72iw9OVcy0efhR23i",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661cb4d9c3cd494202dd0994"
+  },
+  "userId": {
+    "$oid": "661cb4d9c3cd494202dd0993"
+  },
+  "firstName": "Akshit",
+  "lastName": "Saxena",
+  "email": "sawxena.aksh22it@gmail.com",
+  "password": "$2b$10$qeAN8K8lC5fnCx0OzDQ21Os8tPG3gt4bxgSce/27ZWirGngsKy.Ta",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661cbbbe260caf050bcb2189"
+  },
+  "userId": {
+    "$oid": "661cbbbe260caf050bcb2188"
+  },
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "john.jacob@gmail.com",
+  "password": "$2b$10$J3HXLKhG0CtL7EcMjl8.t.T6hwCwVdzosDTJGa3izhxdJ/bqv/VW.",
+  "language": "en",
+  "bio": "Just trying to make the world a better place!!!!",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661cbcb6260caf050bcb218e"
+  },
+  "userId": {
+    "$oid": "661cbcb6260caf050bcb218d"
+  },
+  "firstName": "Brad",
+  "lastName": "Pitt",
+  "email": "brad.pitt@gmail.com",
+  "password": "$2b$10$R163/cR70N3QzaYm7B4IVeK1wwidLIYMLDM9jK0nhKIO312dl4NWi",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661d93b9a0250b9a01a110b3"
+  },
+  "userId": {
+    "$oid": "661d93b9a0250b9a01a110b2"
+  },
+  "firstName": "UpdatedFirstName",
+  "lastName": "UpdatedLastName",
+  "email": "new.user@gmail.com",
+  "password": "$2b$10$rqMYKPPy81HiSvlh87SzIekatdXwUqnUIX7Vg1ytCNPdVUtw0bkI2",
+  "language": "hi",
+  "bio": "Updated Bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661dad6b61c3c194cbcb5374"
+  },
+  "userId": {
+    "$oid": "661dad6b61c3c194cbcb5373"
+  },
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "password": "$2b$10$6b8za3rm/NORUmKL9NyOPelXnsDXt9qaGEPdVtwt2T9dp4L/JwVpS",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662028ab6fea7ccb0c1129dc"
+  },
+  "userId": {
+    "$oid": "662028ab6fea7ccb0c1129db"
+  },
+  "firstName": "Test",
+  "lastName": "user",
+  "email": "test.user@gmail.com",
+  "password": "$2b$10$FnOML7tsuvVjI5s5AkhruuxgpReusffpcvnwqY0x0JzB1CtlSwbJu",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662028d96fea7ccb0c1129e1"
+  },
+  "userId": {
+    "$oid": "662028d96fea7ccb0c1129e0"
+  },
+  "firstName": "Test",
+  "lastName": "user",
+  "email": "user.test@gmail.com",
+  "password": "$2b$10$AlOMfUivIvAuQUer2dHiTOlMZLRhxcaDkWG29JRFqVupqpOcopu4G",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66202917437adf5cf9c515ce"
+  },
+  "userId": {
+    "$oid": "66202917437adf5cf9c515cd"
+  },
+  "firstName": "Test",
+  "lastName": "user",
+  "email": "test.test@gmail.com",
+  "password": "$2b$10$p0Eib5.8aR8cgHMICJoFKO7xHYqsJFXlatmhXCFwlQpTxS.9wUgd6",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66235c65816b3ecfb0c6a057"
+  },
+  "userId": {
+    "$oid": "66235c65816b3ecfb0c6a056"
+  },
+  "firstName": "Johnathan",
+  "lastName": "Sweeney",
+  "email": "syd.swe@gmail.com",
+  "password": "$2b$10$GGs8B2NQqjQnJaBkZuhZ..v4Wh.R45QVh2Z84lnndfkuXPN2qpEu6",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6626c312015bb98faf3303bd"
+  },
+  "userId": {
+    "$oid": "6626c312015bb98faf3303bc"
+  },
+  "firstName": "Second",
+  "lastName": "Last",
+  "email": "first.last@gmail.com",
+  "password": "$2b$10$p37jC5wM8EkBbXx7X59RT.gOnyPSgif/j7VSIYuMfosh1yXr0XM0W",
+  "language": "en",
+  "bio": "sample bio",
+  "__v": 0
+}]

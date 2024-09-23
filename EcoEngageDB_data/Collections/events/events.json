@@ -1,0 +1,256 @@
+[{
+  "_id": {
+    "$oid": "661c5ac63d03ef84008890dc"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa58"
+  },
+  "name": "Community Cleanup Day",
+  "title": "Beach Cleanup Event",
+  "description": "Join us for a day of cleaning up the local beach and promoting environmental sustainability.",
+  "eventStartDate": {
+    "$date": "2024-04-01T08:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-04-03T12:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa59"
+    },
+    {
+      "$oid": "661c5b6d3d03ef84008890de"
+    },
+    {
+      "$oid": "661c5b8f3d03ef84008890df"
+    }
+  ],
+  "location": {
+    "address1": "1200 Boylston St",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02215",
+    "latitude": 42.34518587026401,
+    "longitude": -71.09327066935835
+  }
+},
+{
+  "_id": {
+    "$oid": "661c601713341012832842af"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa5c"
+  },
+  "name": "Tree Planting Initiative",
+  "title": "Community Greenery Project",
+  "description": "Join us in planting trees around the neighborhood to improve air quality and beautify the area.",
+  "eventStartDate": {
+    "$date": "2024-04-05T09:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2023-04-08T12:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa5d"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa5e"
+    }
+  ],
+  "location": {
+    "address1": "139 Tremont St",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02111",
+    "latitude": 42.356425712341704,
+    "longitude": -71.06564862931435
+  }
+},
+{
+  "_id": {
+    "$oid": "661c608213341012832842b1"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa5f"
+  },
+  "name": "Recycling Workshop",
+  "title": "Waste Management Seminar",
+  "description": "Learn about the importance of recycling and how to properly manage waste in your community.",
+  "eventStartDate": {
+    "$date": "2024-04-15T14:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-04-15T16:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa60"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa61"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa62"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa63"
+    }
+  ],
+  "location": {
+    "address1": "1 Franklin Park Rd",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02121",
+    "latitude": 42.30711231719882,
+    "longitude": -71.08954744571034
+  }
+},
+{
+  "_id": {
+    "$oid": "661c608e13341012832842b3"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa64"
+  },
+  "name": "Wildlife Conservation Talk",
+  "title": "Protecting Our Natural Habitats",
+  "description": "Join experts as they discuss strategies for preserving wildlife and their habitats.",
+  "eventStartDate": {
+    "$date": "2024-04-22T10:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-04-22T12:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa65"
+    }
+  ],
+  "location": {
+    "address1": "Storrow Dr",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02116",
+    "latitude": 42.35633314843427,
+    "longitude": -71.07854762398834
+  }
+},
+{
+  "_id": {
+    "$oid": "661c60ae13341012832842b5"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa66"
+  },
+  "name": "Environmental Film Screening",
+  "title": "Movie Night: Eco-Friendly Films",
+  "description": "Enjoy an evening of thought-provoking films focused on environmental themes.",
+  "eventStartDate": {
+    "$date": "2024-04-29T18:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-04-29T21:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa67"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa68"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa69"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa6a"
+    }
+  ],
+  "location": {
+    "address1": "1 Courthouse Way",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02210",
+    "latitude": 42.35581740494129,
+    "longitude": -71.0460980253944
+  }
+},
+{
+  "_id": {
+    "$oid": "661c60d013341012832842b7"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa6b"
+  },
+  "name": "Energy Efficiency Workshop",
+  "title": "Reducing Your Carbon Footprint",
+  "description": "Learn practical tips for conserving energy and reducing your impact on the environment.",
+  "eventStartDate": {
+    "$date": "2024-05-06T13:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-05-06T15:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa6c"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa6d"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa6e"
+    }
+  ],
+  "location": {
+    "address1": "Museum Of Science Driveway",
+    "address2": "",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "02114",
+    "latitude": 42.36884855350764,
+    "longitude": -71.070716320208
+  }
+},
+{
+  "_id": {
+    "$oid": "661c64630771f6979be45f74"
+  },
+  "eventId": {
+    "$oid": "61793b9a7ebf0cf60cfbfa6f"
+  },
+  "name": "River Cleanup Event",
+  "title": "Cleaning Our Waterways",
+  "description": "Help clean up the local riverbanks and ensure the health of our water ecosystems.",
+  "eventStartDate": {
+    "$date": "2024-05-13T08:00:00.000Z"
+  },
+  "eventEndDate": {
+    "$date": "2024-05-13T12:00:00.000Z"
+  },
+  "usersRegistered": [
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa70"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa71"
+    },
+    {
+      "$oid": "61793b9a7ebf0cf60cfbfa72"
+    }
+  ],
+  "location": {
+    "address1": "668 Memorial Dr",
+    "address2": "",
+    "city": "Cambridge",
+    "state": "MA",
+    "zipCode": "02139",
+    "latitude": 42.3554803538674,
+    "longitude": -71.11389669018612
+  }
+}]

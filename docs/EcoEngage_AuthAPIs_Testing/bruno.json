@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "name": "EcoEngage_AuthAPIs_Testing",
+  "type": "collection",
+  "ignore": ["node_modules", ".git"]
+}

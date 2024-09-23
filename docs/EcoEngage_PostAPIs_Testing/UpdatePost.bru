@@ -1,0 +1,22 @@
+meta {
+  name: UpdatePost
+  type: http
+  seq: 1
+}
+
+patch {
+  url: http://localhost:3001/posts/6622f9028ae043cabb782b0f
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha3NoaXdhZGFza2FyNDNAZ21haWwuY29tIiwidXNlcklkIjoiNjYyMDc3NmU4OGQzZGRkYTE1NDlkYTA1IiwiZmlyc3ROYW1lIjoiU2Frc2hpIiwibGFzdE5hbWUiOiJXYWRhc2thciIsImlhdCI6MTcxMzU2MDQzMywiZXhwIjoxNzEzNjQ2ODMzfQ.LQd49PKL4cAdCenWwP8ckmrynwSAKnQtCESDUDH7TQg
+}
+
+body:json {
+  {
+    "title": "FRIDAY 19th Post 1 API Test",
+    "content": "This is the content of the sample post. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}

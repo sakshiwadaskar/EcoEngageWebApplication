@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "EcoEngage_EventsAPIs_Testing",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

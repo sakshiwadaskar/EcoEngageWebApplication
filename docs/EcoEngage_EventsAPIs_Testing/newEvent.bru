@@ -1,0 +1,27 @@
+meta {
+  name: newEvent
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:4000/events/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "eventId": "61793b9a7ebf0cf60cfbfa6f",
+      "name": "River Cleanup Event",
+      "title": "Cleaning Our Waterways",
+      "description": "Help clean up the local riverbanks and ensure the health of our water ecosystems.",
+      "eventStartDate": "2024-05-13T08:00:00.000Z",
+      "eventEndDate": "2024-05-13T12:00:00.000Z",
+      "usersRegistered": [
+        "61793b9a7ebf0cf60cfbfa70",
+        "61793b9a7ebf0cf60cfbfa71",
+        "61793b9a7ebf0cf60cfbfa72"
+      ]
+  }
+}

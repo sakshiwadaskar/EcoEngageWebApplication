@@ -1,0 +1,42 @@
+/* CampaignPage.css */
+
+.root {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mapContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0; /* Placeholder background color for the map */
+  display: flex;
+  justify-content: center;
+}
+
+.cardListContainer {
+  position: absolute;
+  top: 90px; /* Adjust the top position to create slit space from the top */
+  left: 20px; /* Adjust the left position to create slit space from the left */
+  z-index: 10; /* Ensure the CardList is above the map */
+  /* background-color: rgba(93, 214, 193, 0.9); Adjust opacity as needed */
+  background-color: #212121;
+  padding: 16px;
+  max-height: calc(
+    100vh - 120px
+  ); /* Adjust the height to leave some space at the bottom */
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  border-radius: 20px; /* Add border radius */
+  box-shadow: 2px 2px 48px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.landingBarContainer {
+  position: relative;
+  z-index: 20; /* Ensure the z-index is higher than the map */
+}
