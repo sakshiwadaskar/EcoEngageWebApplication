@@ -1,6 +1,6 @@
-import express from 'express'
+import express from 'express';
 import dotenv from 'dotenv';
-import cors from 'cors';
+import mongoose from 'mongoose';
 import init from './app/app.js';
 
 dotenv.config();
@@ -9,11 +9,22 @@ const app = express();
 const port = process.env.PORT;
 init(app);
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+// Retrieve server connection details
+app.get("/", (req, res) => {
+  const serverDetails = {
+    status: 'Server is running',
+    port: port,
+    environment: process.env.NODE_ENV || 'development',
+    frontendURL: process.env.FRONTEND_SERVER_URL || 'Not set',
+    mongoConnection: mongoose.connection.readyState === 1 ? 'Connected to MongoDB' : 'Not connected to MongoDB',
+    mongoURI: process.env.MONGO_CONNECTION ? 'MongoDB URI set' : 'MongoDB URI not set',
+  };
 
-app.listen(port, (req, res, next) => {
-  app.use(cors());
+  res.json(serverDetails); // Send server details as JSON response
+});
+
+app.listen(port, () => {
   console.log(`server running at port ${port}`);
 });
 
-export default app
+export default app;

@@ -1,40 +1,39 @@
-import dotenv from 'dotenv';
 import cors from 'cors';
 import express from 'express';
 import mongoose from 'mongoose';
 import initRoutes from './routes/routeIndex.js';
 
-dotenv.config(); // Load environment variables
-
-const connectToDatabase = async () => {
-  const mongoURI = process.env.MONGO_CONNECTION;
-
-  if (!mongoURI) {
-    console.error('MongoDB connection URI is undefined. Please set the MONGO_CONNECTION environment variable.');
-    return;
-  }
-
+const connectToDatabase = async (mongoURI) => {
   try {
     await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 10000,
+      serverSelectionTimeoutMS: 10000, // 10 seconds timeout for server selection
     });
     console.log('Successfully connected to MongoDB using Mongoose!');
   } catch (err) {
     console.error('Failed to connect to MongoDB:', err.message);
-    // Continue running the server even if the DB connection fails
+    // process.exit(1); // Commented out to prevent app crash
   }
 };
 
 const init = (app) => {
-  app.use(cors());
+  // Middleware setup
+  const allowedOrigins = process.env.FRONTEND_SERVER_URL;
+
+  app.use(cors({
+    origin: allowedOrigins || '*',
+    credentials: true, // Allow credentials (like cookies) to be sent
+  }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use('/uploads', express.static('uploads'));
 
-  connectToDatabase(); // Attempt to connect to MongoDB
+  // MongoDB URI from environment variables
+  const mongoURI = process.env.MONGO_CONNECTION;
 
+  // Connect to MongoDB
+  connectToDatabase(mongoURI);
+
+  // Initialize application routes
   initRoutes(app);
 };
 
