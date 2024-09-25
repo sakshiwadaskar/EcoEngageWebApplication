@@ -4,9 +4,13 @@ import mongoose from 'mongoose';
 import initRoutes from './routes/routeIndex.js';
 
 const connectToDatabase = async (mongoURI) => {
+  console.log('MongoDB URI:', process.env.MONGO_CONNECTION);
+
   try {
     await mongoose.connect(mongoURI, {
-      serverSelectionTimeoutMS: 10000, // 10 seconds timeout for server selection
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 30000, // 10 seconds timeout for server selection
     });
     console.log('Successfully connected to MongoDB using Mongoose!');
   } catch (err) {
