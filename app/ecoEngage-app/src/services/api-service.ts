@@ -9,7 +9,7 @@
   * @type {string}
 */
 
-const serverURL = import.meta.env.VITE_LOCAL_SERVER_URL;
+const serverURL = import.meta.env.VITE_BACKEND_SERVER_URL;
 
 /**
   * Fetches data from the API.
