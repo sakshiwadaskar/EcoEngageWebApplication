@@ -6,7 +6,8 @@
 import { Post } from '../models/Post.ts';
 import { getData } from './api-service';
 import axios from "axios";
-const API_URL = 'http://localhost:5001/posts';
+// const API_URL = 'http://localhost:5001/posts';
+const API_URL = import.meta.env.VITE_BACKEND_SERVER_URL;
 /**
  * Endpoint for posts in the API.
  * @constant
