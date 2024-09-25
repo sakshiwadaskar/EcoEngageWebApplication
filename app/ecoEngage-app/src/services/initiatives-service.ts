@@ -1,4 +1,3 @@
-import { BASE_URL } from "./auth-service"
 const API_URL = import.meta.env.VITE_BACKEND_SERVER_URL;
 
 export const InitiativeService = {
