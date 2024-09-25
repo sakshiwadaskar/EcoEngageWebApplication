@@ -40,7 +40,7 @@ export const updatePost = async (postId: string | undefined, updatedPost: {
   content: string
 }, token: string): Promise<Post | null> => {
   try {
-    const response = await axios.patch<Post>(`${API_URL}/${postId}`, updatedPost, {
+    const response = await axios.patch<Post>(`${API_URL}/postsAPI/${postId}`, updatedPost, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -64,7 +64,7 @@ export const updatePost = async (postId: string | undefined, updatedPost: {
 // Function to create a new post
 export async function createNewPost(postData: FormData, token: string): Promise<Post | null> {
   try {
-    const response = await axios.post<Post>(`${API_URL}`, postData, {
+    const response = await axios.post<Post>(`${API_URL}/postsAPI/`, postData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "Authorization": `Bearer ${token}`,
@@ -92,7 +92,7 @@ export const deletePost = async (postId: string, token: string): Promise<void> =
   try {
     // Make a DELETE request to the API endpoint with the postId
     // Include the Authorization header with the provided token
-    await axios.delete(`${API_URL}/${postId}`, {
+    await axios.delete(`${API_URL}/postsAPI/${postId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -117,7 +117,7 @@ export const deletePost = async (postId: string, token: string): Promise<void> =
 export const toggleLikeUnlike = async (postId: string, token: string): Promise<void> => {
   console.log('token from the service frontend.......', token);
   try {
-    const response = await axios.patch(`${API_URL}/${postId}/toggle-like`, {}, {
+    const response = await axios.patch(`${API_URL}/postsAPI/${postId}/toggle-like`, {}, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
