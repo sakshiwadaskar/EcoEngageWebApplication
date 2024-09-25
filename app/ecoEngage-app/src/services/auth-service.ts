@@ -5,6 +5,7 @@ export const serverURL = import.meta.env.VITE_BACKEND_SERVER_URL;
 // This file contains the implementation of the AuthService module.
 // It provides functions for user authentication and user data management.
 // The AuthService module.
+const BASE_URL = import.meta.env.VITE_BACKEND_SERVER_URL;
 export const AuthService = {
   // Function for user sign up.
   // Parameters:
