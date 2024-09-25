@@ -45,7 +45,7 @@ export const createCommentForPost = async (postId: string, comment: Comment): Pr
   try {
     console.log("comment from comments-service.ts", comment);
     console.log("postid", postId);
-    const response = await axios.post<Comment>(`${API_URL}/commentsAPI/post/${postId}`, comment, {
+    const response = await axios.post<Comment>(`${API_URL}/comments/post/${postId}`, comment, {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data;
@@ -65,7 +65,7 @@ export const updateCommentById = async (commentId: string, commentUpdate: {}): P
   const token = getToken();
   try {
     console.log("CommentCOntent", commentUpdate)
-    const response = await axios.patch<Comment>(`${API_URL}/commentsAPI/${commentId}`, commentUpdate, {
+    const response = await axios.patch<Comment>(`${API_URL}/comments/${commentId}`, commentUpdate, {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data;
@@ -81,7 +81,7 @@ export const updateCommentById = async (commentId: string, commentUpdate: {}): P
 export const deleteCommentById = async (commentId: string): Promise<void> => {
   const token = getToken();
   try {
-    await axios.delete(`${API_URL}/commentsAPI/${commentId}`, {
+    await axios.delete(`${API_URL}/comments/${commentId}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
   } catch (error) {
