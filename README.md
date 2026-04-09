@@ -16,7 +16,6 @@ Overall, the EcoEngage Portal aims to empower individuals and communities to tak
 
 ## Members
 
-- Aaditya Kasbekar: [kasbekar.a@northeastern.edu](mailto:kasbekar.a@northeastern.edu)
 - Sakshi Mahesh Wadaskar: [wadaskar.s@northeastern.edu](mailto:wadaskar.s@northeastern.edu)
 
 ## Technical Requirements
