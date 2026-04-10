@@ -13,8 +13,7 @@ interface Props {
 }
 
 function getImageURL(name: string) {
-  return new URL(`../assets/images/plantationEvents/${name}`, import.meta.url)
-    .href;
+  return new URL(`/images/events/${name}`);
 }
 
 const EventComponent: React.FC<Props> = ({ eventItem, showRegisterButton }) => {
